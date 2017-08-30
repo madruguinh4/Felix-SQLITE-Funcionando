@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="16dp"
+
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editCodigo"
+            android:enabled="false"
+            android:hint="Código"
+            />
+
+
+        <EditText
+            android:id="@+id/editCadNome"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textCapCharacters"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/editCadSobrenome"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="Sobrenome"
+            android:inputType="textCapCharacters"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionUnspecified"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editCadEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionUnspecified"/>
+        <EditText
+            android:id="@+id/editCadTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionUnspecified"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editCadSenha"
+            android:hint="Senha"
+            android:layout_width="180dp"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionUnspecified"/>
+        <EditText
+            android:id="@+id/editCadConfirmeSenha"
+            android:hint="Confirme Senha"
+            android:layout_width="180dp"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionUnspecified"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+      >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdCadProfissional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ser Profissional" />
+
+            <RadioButton
+                android:id="@+id/rdCadCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ser Cliente" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtTermo"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="Ao se cadastrar você estará de acordo com os"
+            />
+
+        <TextView
+            android:id="@+id/txtTermo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:textColor="#ff0011"
+            android:layout_marginLeft="13dp"
+            android:textSize="12dp"
+            android:text="TEMOS E CONDIÇÕES E POLITICAS DE PRIVACIDADE"
+            />
+        <Button
+            android:id="@+id/btnCadCdastar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:text="Cadastrar"
+            android:onClick="cadastrar"/>
+    </LinearLayout>
+
+</LinearLayout>
